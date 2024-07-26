@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Simple Button Click Example</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            padding: 20px;  
+        }  
+        button {  
+            padding: 10px 15px;  
+            font-size: 16px;  
+            cursor: pointer;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <p id="myParagraph">This is the original text.</p>  
+    <button id="myButton">Change Text</button>  
+    
+    <script>  
+        // Get references to the paragraph and button elements  
+        const myParagraph = document.getElementById('myParagraph');  
+        const myButton = document.getElementById('myButton');  
+
+        // Function to change the text of the paragraph  
+        function changeText() {  
+            myParagraph.textContent = "The text has been changed!";  
+        }  
+
+        // Add an event listener to the button to call changeText on click  
+        myButton.addEventListener('click', changeText);  
+    </script>  
+</body>  
+</html>
